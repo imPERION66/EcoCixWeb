@@ -19,8 +19,20 @@
       text-align: center;
     }
 
-    h1 {
-      font-size: 2.5em;
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .header-content img {
+      height: 60px;
+    }
+
+    .header-content h1 {
+      font-size: 2em;
       font-weight: bold;
       color: #ffffff;
       text-shadow: 1px 1px 2px #1b5e20;
@@ -79,14 +91,18 @@
       padding: 20px;
       font-size: 14px;
     }
+
+    footer p {
+      margin: 8px 0;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
-      <img src="logoPagina.png" alt="Logo EcoCix" style="height: 80px;">
-      <h1>Aplicativo Ambiental para Chiclayo</h1>
+    <div class="header-content">
+      <img src="logoPagina.png" alt="Logo EcoCix">
+      <h1>EcoCix – Aplicativo Ambiental para Chiclayo</h1>
     </div>
     <p style="text-align: center;">Versión de prueba para reportes y educación ambiental ciudadana</p>
   </header>
@@ -142,4 +158,5 @@
 
 </body>
 </html>
+
 
