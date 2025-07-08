@@ -11,32 +11,34 @@
       background-color: #f5fff5;
       color: #333;
     }
+
     header {
       background-color: #2e7d32;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    nav {
-      background-color: #4caf50;
+
+    .header-content {
       display: flex;
+      align-items: center;
       justify-content: center;
-      gap: 20px;
-      padding: 10px;
+      flex-wrap: wrap;
+      gap: 15px;
     }
-    nav a {
-      color: white;
-      text-decoration: none;
+
+    .header-content img {
+      height: 60px;
+    }
+
+    .header-content h1 {
+      font-size: 2em;
       font-weight: bold;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px #1b5e20;
+      margin: 0;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+
     h2 {
       font-size: 1.8em;
       color: #2e7d32;
@@ -44,6 +46,44 @@
       padding-left: 15px;
       margin-bottom: 10px;
     }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      background-color: #4caf50;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 25px;
+      font-size: 1.05em;
+    }
+
     footer {
       background-color: #e0e0e0;
       color: #333;
@@ -51,17 +91,20 @@
       padding: 20px;
       font-size: 14px;
     }
-    ul {
-      list-style-type: square;
-      margin-left: 20px;
+
+    footer p {
+      margin: 8px 0;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>EcoCix - Aplicativo Ambiental para Chiclayo</h1>
-    <p>Versión de prueba para reportes y educación ambiental ciudadana</p>
+    <div class="header-content">
+      <img src="logoPagina.png" alt="Logo EcoCix">
+      <h1>EcoCix – Aplicativo Ambiental para Chiclayo</h1>
+    </div>
+    <p style="text-align: center;">Versión de prueba para reportes y educación ambiental ciudadana</p>
   </header>
 
   <nav>
@@ -108,12 +151,14 @@
   </section>
 
   <footer>
-    <p>COPYRIGHT ©2023, YHOMAR CRUZ VÁSQUEZ. TODOS LOS DERECHOS RESERVADOS.</p>
-    <p>Diseñado por el equipo de desarrollo de EcoCix</p>
+    <p>COPYRIGHT ©2025, EcoCix – Universidad Tecnológica del Perú.</p>
+    <p>TODOS LOS DERECHOS RESERVADOS.</p>
+    <p>Desarrollado como parte de un proyecto académico sin fines de lucro.</p>
   </footer>
 
 </body>
 </html>
+
 
 
 
